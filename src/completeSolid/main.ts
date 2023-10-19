@@ -9,13 +9,13 @@
 
     Módulos de alto nivel n devem depender de modulos de baixo nivel. Ambos devem depender de abstrações. Dependa de abstrações, não de implementações. Abstrações não devem depender de detalhes. Detalhes devem depender de abstrações
 */
-import { Persistency } from "./services/Persistency";
-import { Messaging } from "./entities/messaging";
-import { Order } from "./entities/order";
-import { Product } from "./services/products";
-import { ShoppingCart } from "./entities/shopping-cart";
-import { FiftyDiscount, TenDiscount, NoDiscount } from "./entities/discount";
-import { EnterpriseCustomer, IndividualCustomer } from "./entities/customer";
+import { Persistency } from "./services/persistency";
+import { Messaging } from "./services/messaging";
+import { Order } from "./classes/order";
+import { Product } from "./classes/products";
+import { ShoppingCart } from "./classes/shopping-cart";
+import { FiftyDiscount, TenDiscount, NoDiscount } from "./classes/discount";
+import { EnterpriseCustomer, IndividualCustomer } from "./classes/customer";
 
 const fiftyDiscount = new FiftyDiscount()
 const tenDiscount = new TenDiscount()

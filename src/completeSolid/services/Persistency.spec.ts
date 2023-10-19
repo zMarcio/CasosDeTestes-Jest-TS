@@ -1,4 +1,4 @@
-import { Persistency } from "./Persistency";
+import { Persistency } from "./persistency";
 
 describe("Persistency", () => {
     afterEach(() => jest.clearAllMocks())

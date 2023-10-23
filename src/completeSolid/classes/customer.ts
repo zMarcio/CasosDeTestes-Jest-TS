@@ -4,7 +4,6 @@ export class IndividualCustomer implements IndividualCustomerProtocol,CustomerOr
     firstName: string;
     lastName: string;
     cpf: string;
-    cnpj: string;
 
     constructor(
         firstName: string,
@@ -14,7 +13,6 @@ export class IndividualCustomer implements IndividualCustomerProtocol,CustomerOr
         this.firstName = firstName
         this.lastName = lastName
         this.cpf = cpf 
-        this.cnpj = ''
     }
 
 

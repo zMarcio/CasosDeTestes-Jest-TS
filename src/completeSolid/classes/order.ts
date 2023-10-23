@@ -21,6 +21,7 @@ export class Order{
     checkout():void{
         if(this.cart.isEmpty()){
             console.log('Seu carrinho está vazio')
+            return
         }
 
         this._orderStatus = 'closed'
